@@ -26,7 +26,7 @@
     ],
     "rules": {
       "react/prop-types": "off",
-
+      "no-nested-ternary": "off",
       "no-use-before-define": "off",
       "react/jsx-props-no-spreading": "off",
       "react-hooks/rules-of-hooks": "error",
