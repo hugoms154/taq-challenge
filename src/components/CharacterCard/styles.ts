@@ -6,12 +6,12 @@ export const CardContainer = styled.article`
 `;
 
 interface ICardProps {
-  status: 'Alive' | 'Unkown' | 'Dead';
+  status: 'Alive' | 'unknown' | 'Dead';
 }
 
 const colorsStatus = {
   Alive: '#32fc7b',
-  Unkown: '#656d78',
+  unknown: '#656d78',
   Dead: '#fc5f58',
 };
 

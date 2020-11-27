@@ -10,7 +10,7 @@ interface ICharacter {
   id: string;
   name: string;
   image: string;
-  status: 'Alive' | 'Unkown' | 'Dead';
+  status: 'Alive' | 'unknown' | 'Dead';
   episode: Array<{
     id: string;
     name: string;
