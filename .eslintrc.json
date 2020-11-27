@@ -26,6 +26,7 @@
     ],
     "rules": {
       "react/prop-types": "off",
+      "react/jsx-curly-newline": "off",
       "no-nested-ternary": "off",
       "no-use-before-define": "off",
       "react/jsx-props-no-spreading": "off",
