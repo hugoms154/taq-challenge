@@ -10,7 +10,7 @@ const visibilityStatus = {
 };
 
 export const Container = styled.div<IDetailContainerProps>`
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.7);
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -24,6 +24,7 @@ export const Container = styled.div<IDetailContainerProps>`
 export const CarouselContainer = styled.div`
   width: 300px;
   margin-top: 24px;
+  padding: 0 8px;
 
   .rec.rec-arrow:hover {
     background: #4044fc;
@@ -37,7 +38,7 @@ export const DetailContent = styled.div`
   position: relative;
   background: #f8f8f9;
 
-  max-width: 1000px;
+  max-width: 768px;
   width: 100%;
   min-height: 300px;
   margin: 15%;
@@ -46,11 +47,18 @@ export const DetailContent = styled.div`
 
   display: flex;
   flex: 1;
+  flex-wrap: wrap;
 
   .goBack {
     position: absolute;
     top: 8px;
     right: 16px;
+    color: #fff;
+    font-weight: bold;
+    background: #fc5f58;
+    padding: 4px 12px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.75);
     cursor: pointer;
   }
 

@@ -29,7 +29,7 @@ const CharacterDetail: React.FC<ICharacterDetailProps> = ({
     <Container visibility={visibility}>
       <DetailContent>
         <span className="goBack" onClick={() => setVisibility('hidden')}>
-          back
+          close
         </span>
         <img src={character.image} alt="character" />
         <main>
