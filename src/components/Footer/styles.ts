@@ -9,4 +9,15 @@ export const Footer = styled.footer`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  a {
+    color: #4044fc;
+    transition: color 0.2s;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      color: #2e22ff;
+    }
+  }
 `;
