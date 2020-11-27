@@ -16,7 +16,9 @@ const colorsStatus = {
 };
 
 export const CardContent = styled.div<ICardProps>`
-  background: #fff;
+  // light-theme
+  // background: #fff;
+  background: #1b1d29;
   box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.75);
   display: flex;
   flex-direction: column;
@@ -37,6 +39,9 @@ export const CardContent = styled.div<ICardProps>`
   }
 
   h2 {
+    // light-theme
+    // color: #000;
+    color: #fff;
     margin-top: 8px;
     display: flex;
     align-items: center;
