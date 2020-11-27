@@ -54,11 +54,13 @@ export const CardContent = styled.div<ICardProps>`
     margin: 16px 0;
 
     .status {
-      margin-right: 8px;
-      margin-top: -3px;
+      background: ${props => colorsStatus[props.status]};
+      font-size: 16px;
+      padding: 0 16px;
+      border-radius: 12px;
 
-      color: ${props => colorsStatus[props.status]};
-      font-size: 32px;
+      font-weight: bold;
+      color: ${props => (props.status === 'Alive' ? '#000' : '#fff')};
     }
   }
 `;

@@ -53,8 +53,7 @@ const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => {
           </header>
           <h2>{character.name}</h2>
           <footer>
-            <span className="status">•</span>
-            <p>{character.status}</p>
+            <span className="status">{character.status}</span>
           </footer>
         </CardContent>
       </CardContainer>
