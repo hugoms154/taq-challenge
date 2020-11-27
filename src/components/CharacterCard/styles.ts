@@ -22,6 +22,12 @@ export const CardContent = styled.div<ICardProps>`
   flex-direction: column;
   justify-content: space-between;
   border-radius: 12px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   header {
     img {
