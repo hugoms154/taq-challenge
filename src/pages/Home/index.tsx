@@ -11,6 +11,10 @@ interface ICharacter {
   name: string;
   image: string;
   status: 'Alive' | 'Unkown' | 'Dead';
+  episode: Array<{
+    id: string;
+    name: string;
+  }>;
 }
 
 interface IResponse {
@@ -39,6 +43,9 @@ const Home: React.FC = () => {
           name
           image
           status
+          episode {
+            name
+          }
         }
       }
     }
