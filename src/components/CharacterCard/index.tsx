@@ -2,20 +2,28 @@ import React from 'react';
 
 import { CardContainer, CardContent } from './styles';
 
-const CharacterCard: React.FC = () => (
+interface ICharacter {
+  id: string;
+  name: string;
+  image: string;
+  status: 'Alive' | 'Unkown' | 'Dead';
+}
+
+interface CharacterCardProps {
+  character: ICharacter;
+}
+
+const CharacterCard: React.FC<CharacterCardProps> = ({ character }) => (
   <>
     <CardContainer>
-      <CardContent>
+      <CardContent status={character.status}>
         <header>
-          <img
-            src="https://rickandmortyapi.com/api/character/avatar/81.jpeg"
-            alt="Character"
-          />
+          <img src={character.image} alt="Character" />
         </header>
-        <h2>Crocubot</h2>
+        <h2>{character.name}</h2>
         <footer>
           <span className="status">•</span>
-          <p>Situação desconhecida</p>
+          <p>{character.status}</p>
         </footer>
       </CardContent>
     </CardContainer>

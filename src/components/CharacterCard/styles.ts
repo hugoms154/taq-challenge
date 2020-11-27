@@ -5,7 +5,17 @@ export const CardContainer = styled.article`
   padding: 16px;
 `;
 
-export const CardContent = styled.div`
+interface ICardProps {
+  status: 'Alive' | 'Unkown' | 'Dead';
+}
+
+const colorsStatus = {
+  Alive: '#32fc7b',
+  Unkown: '#656d78',
+  Dead: '#fc5f58',
+};
+
+export const CardContent = styled.div<ICardProps>`
   background: #fff;
   box-shadow: 0px 0px 11px -1px rgba(0, 0, 0, 0.75);
   display: flex;
@@ -25,6 +35,8 @@ export const CardContent = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 0 16px;
   }
 
   footer {
@@ -39,11 +51,7 @@ export const CardContent = styled.div`
       margin-right: 8px;
       margin-top: -3px;
 
-      // #fc5f58
-      // #32fc7b
-      // #fcd426
-      // #656d78
-      color: #656d78;
+      color: ${props => colorsStatus[props.status]};
       font-size: 32px;
     }
   }

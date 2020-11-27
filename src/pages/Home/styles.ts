@@ -4,6 +4,12 @@ export const Container = styled.div`
   button {
     margin: 32px auto;
   }
+
+  h3 {
+    display: flex;
+    margin: 32px 0;
+    justify-content: center;
+  }
 `;
 
 export const ListDisplay = styled.main`
