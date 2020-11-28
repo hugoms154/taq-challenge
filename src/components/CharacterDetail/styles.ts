@@ -21,24 +21,11 @@ export const Container = styled.div<IDetailContainerProps>`
   z-index: 999;
 `;
 
-export const CarouselContainer = styled.div`
-  width: 300px;
-  margin-top: 24px;
-  padding: 0 8px;
-
-  .rec.rec-arrow:hover {
-    background: #4044fc;
-  }
-  .rec.rec-arrow:focus {
-    background: #2e22ff;
-  }
-`;
-
 export const DetailContent = styled.div`
   position: relative;
   background: #f8f8f9;
 
-  max-width: 768px;
+  max-width: 300px;
   width: 100%;
   min-height: 300px;
   margin: 15%;
@@ -64,7 +51,7 @@ export const DetailContent = styled.div`
 
   img {
     display: flex;
-    border-radius: 12px 0 0 12px;
+    border-radius: 12px 12px 0 0;
     background: red;
     width: 300px;
     height: 300px;
@@ -79,5 +66,18 @@ export const DetailContent = styled.div`
       display: block;
       margin-top: 8px;
     }
+  }
+`;
+
+export const CarouselContainer = styled.div`
+  width: 300px;
+  margin-top: 24px;
+  padding: 0 8px;
+
+  .rec.rec-arrow:hover {
+    background: #4044fc;
+  }
+  .rec.rec-arrow:focus {
+    background: #2e22ff;
   }
 `;
