@@ -45,7 +45,7 @@ const CharacterDetail: React.FC<ICharacterDetailProps> = ({
               renderPagination={() => <></>}
             >
               {character.episode.map(ep => (
-                <div key={ep.id}>{ep.name}</div>
+                <div key={ep.name + ep.id}>{ep.name}</div>
               ))}
             </Carousel>
           </CarouselContainer>
