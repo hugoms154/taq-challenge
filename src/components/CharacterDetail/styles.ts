@@ -12,6 +12,7 @@ const visibilityStatus = {
 export const Container = styled.div<IDetailContainerProps>`
   background: rgba(0, 0, 0, 0.7);
   position: fixed;
+  top: 0;
   width: 100vw;
   height: 100vh;
   display: flex;

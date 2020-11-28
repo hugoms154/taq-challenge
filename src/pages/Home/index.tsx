@@ -3,6 +3,7 @@ import React, { useCallback, useEffect, useState } from 'react';
 import { Button } from '../../components/Button/styles';
 import CharacterCard from '../../components/CharacterCard';
 import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 
 import { Container, ListDisplay } from './styles';
 
@@ -76,6 +77,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Container>
+        <Header />
         <ListDisplay>
           {characters.map(character => (
             <CharacterCard key={character.id} character={character} />
