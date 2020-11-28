@@ -52,7 +52,7 @@ const Home: React.FC = () => {
     }
   `;
 
-  const { data, loading } = useQuery<IResponse>(query, {
+  const { data, loading, error } = useQuery<IResponse>(query, {
     variables: { page: nextPage },
   });
 
@@ -84,7 +84,24 @@ const Home: React.FC = () => {
           ))}
         </ListDisplay>
 
-        {nextPage && nextPage !== null ? (
+        {/*
+        Ternary logic:
+
+        theres an error ?
+        Y: render error
+        N: theres a next page ?
+          Y: render page
+          N: is loading ?
+            Y: render loading
+            N: render end
+        */}
+
+        {error ? (
+          <>
+            <h3>Sorry, an error has occurred</h3>
+            <h3>Try load the page again.</h3>
+          </>
+        ) : nextPage && nextPage !== null ? (
           <Button disabled={loading} onClick={() => handleLoadNextPage()}>
             Load More
           </Button>
