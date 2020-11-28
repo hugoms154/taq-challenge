@@ -6,6 +6,9 @@ export const Container = styled.div`
   }
 
   h3 {
+    // light-theme
+    // color: #000;
+    color: #fff;
     display: flex;
     margin: 32px 0;
     justify-content: center;
